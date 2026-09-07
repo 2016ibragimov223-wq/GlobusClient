@@ -1,4 +1,3 @@
-// language: groovy, file: build.gradle, target: Android Project Root
 plugins {
     id 'com.android.application' version '8.2.0' apply false
 }
