@@ -1,18 +1,6 @@
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:7.4.2'
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+// language: groovy, file: build.gradle, target: Android Project Root
+plugins {
+    id 'com.android.application' version '7.4.2' apply false
 }
 
 task clean(type: Delete) {
