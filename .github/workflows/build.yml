@@ -23,12 +23,8 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
-    - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
-      continue-on-error: true
-
-    - name: Build APK with Gradle
-      run: ./gradlew assembleRelease
+    - name: Build APK with System Gradle
+      run: gradle assembleRelease
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v4
